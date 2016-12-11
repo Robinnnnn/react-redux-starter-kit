@@ -6,7 +6,7 @@ const project = require('../config/project.config')
 const compress = require('compression')
 
 const app = express()
-// app.use(require('prerender-node').set('prerenderToken', 'NsbhPNZyS7zy4yMNO8gU'))
+app.use(require('prerender-node').set('prerenderToken', 'NsbhPNZyS7zy4yMNO8gU'))
 
 // This rewrites all routes requests to the root /index.html file
 // (ignoring file requests). If you want to implement universal
